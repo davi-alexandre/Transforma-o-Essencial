@@ -32,9 +32,9 @@ const closeNavbar = function () {
 
 addEventOnElem(navbarLinks, 'click', closeNavbar);
 
-/*Headere botão home ativos quando o usuário rola a tela para baixo*/
-const header = document.querySelector('[data-header]');
+/*botão home ativo quando o usuário rola a tela para baixo*/
 const backTopBtn = document.querySelector("[data-back-top-btn]")
+const header = document.querySelector("[data-header]")
 
 const activeElemOnScroll = function () {
   if (window.scrollY > 100) {
