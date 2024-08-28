@@ -219,7 +219,7 @@ body {
   object-fit: cover;
 }
 
-.has-scrollbar {
+/* .has-scrollbar {
   display: flex;
   align-items: center;
   gap: 30px;
@@ -251,7 +251,47 @@ body {
 
 .has-scrollbar::-webkit-scrollbar-button {
   width: calc(25% - 30px);
+} 
+  
+TESTE*/
+.has-scrollbar {
+  display: -webkit-flex;
+  display: flex;
+  align-items: center;
+  gap: 30px;
+  overflow-x: auto;
+  -webkit-scroll-snap-type: inline mandatory;
+  scroll-snap-type: inline mandatory;
+  padding-block-end: 20px;
+  margin-block-end: -20px;
 }
+
+.scrollbar-item {
+  min-width: 100%;
+  -webkit-scroll-snap-align: start;
+  scroll-snap-align: start;
+}
+
+.has-scrollbar::-webkit-scrollbar {
+  height: 10px;
+}
+
+.has-scrollbar::-webkit-scrollbar-track {
+  outline: 2px solid var(--portland-orange);
+  border-radius: var(--radius-10);
+}
+
+.has-scrollbar::-webkit-scrollbar-thumb {
+  border-radius: var(--radius-10);
+  background-color: var(--portland-orange);
+  border: 1px solid var(--white);
+}
+
+.has-scrollbar::-webkit-scrollbar-button {
+  width: calc(25% - 30px);
+}
+
+
 
 .grid-list {
   display: grid;
