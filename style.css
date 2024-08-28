@@ -406,7 +406,7 @@ body {
 .offer-card .card-title {
   color: var(--portland-orange);
   font-size: var(--fs-7);
-  font-family: cursive;
+  font-family: var(--ff-carter_one);
   width: 50%;
 }
 
