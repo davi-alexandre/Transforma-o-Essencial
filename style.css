@@ -257,30 +257,7 @@ body {
 /*_________________
       TESTE
 _________________*/
-.flex-container {
-  display: flex;
-  flex-direction: row;
-  overflow-x: auto; 
-}
 
-.flex-container li {
-  flex: 0 0 auto;
-  margin-right: 10px;
-}
-
-.os-theme-dark > .os-scrollbar > .os-scrollbar-track > .os-scrollbar-handle {
-  background-color: var(--portland-orange);
-  border-radius: var(--radius-10);
-}
-
-.os-content {
-  display: flex !important;
-  flex-direction: row !important;
-}
-
-.os-scrollbar {
-  opacity: 1 !important;
-}
 
 
 

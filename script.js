@@ -51,16 +51,4 @@ addEventOnElem(window, 'scroll', activeElemOnScroll);
 
 
 /*TESTE*/
-document.addEventListener("DOMContentLoaded", function() {
-  OverlayScrollbars(document.querySelectorAll('.has-scrollbar'), { 
-    className: "os-theme-dark",
-    scrollbars: {
-      visibility: "visible",
-      autoHide: "never",
-      autoHideDelay: 800,
-      dragScrolling: true,
-      clickScrolling: true,
-      touchSupport: true
-    }
-  });
-});
+
