@@ -233,9 +233,11 @@ body {
   scroll-snap-align: start;
 }
 
+.has-scrollbar {
+  -webkit-overflow-scrolling: touch;
+}
 
-
-/*.has-scrollbar::-webkit-scrollbar {
+.has-scrollbar::-webkit-scrollbar {
   height: 10px;
 }
 
@@ -252,7 +254,9 @@ body {
 
 .has-scrollbar::-webkit-scrollbar-button {
   width: calc(25% - 30px);
-} */
+}
+
+
 
 /*_________________
       TESTE
