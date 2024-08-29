@@ -136,8 +136,7 @@ body {
 }
 
 ::-webkit-scrollbar-thumb {
-  background-color: var(--portland-orange);
-  
+  background-color: hsl(0, 0%, 90%);
 }
 
 ::-webkit-scrollbar-thumb:hover {
@@ -219,9 +218,9 @@ body {
   object-fit: cover;
 }
 
+
 .has-scrollbar {
   display: flex;
-  align-items: center;
   gap: 30px;
   overflow-x: auto;
   scroll-snap-type: inline mandatory;
@@ -233,6 +232,8 @@ body {
   min-width: 100%;
   scroll-snap-align: start;
 }
+
+
 
 /*.has-scrollbar::-webkit-scrollbar {
   height: 10px;
@@ -253,12 +254,34 @@ body {
   width: calc(25% - 30px);
 } */
 
-
-
-
 /*_________________
       TESTE
 _________________*/
+.flex-container {
+  display: flex;
+  flex-direction: row;
+  overflow-x: auto; 
+}
+
+.flex-container li {
+  flex: 0 0 auto;
+  margin-right: 10px;
+}
+
+.os-theme-dark > .os-scrollbar > .os-scrollbar-track > .os-scrollbar-handle {
+  background-color: var(--portland-orange);
+  border-radius: var(--radius-10);
+}
+
+.os-content {
+  display: flex !important;
+  flex-direction: row !important;
+}
+
+.os-scrollbar {
+  opacity: 1 !important;
+}
+
 
 
 
