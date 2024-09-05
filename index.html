@@ -16,6 +16,7 @@
     href="https://fonts.googleapis.com/css2?family=Bangers&family=Carter+One&family=Nunito+Sans:wght@400;700&display=swap"
     rel="stylesheet">
   <link rel="stylesheet" href="./style.css">
+  <script src="https://unpkg.com/scrollreveal"></script>
   <script src="./script.js" defer></script>
   <script type="module" src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.esm.js"></script>
   <script nomodule src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.js"></script>
@@ -25,14 +26,15 @@
 
 <body id="top">
   <!--HEADER-->
+
   <header class="header" data-header>
+
     <div class="container">
+      <img src="./assets/logo.png" class="logo" alt="Logo">
       <button class="nav-toggle-btn" aria-label="toggle manu" data-nav-toggler>
         <ion-icon name="menu-outline" aria-hidden="true" class="menu-icon"></ion-icon>
         <ion-icon name="close-outline" aria-label="true" class="close-icon"></ion-icon>
       </button>
-
-      <img src="./assets/logo.png" class="logo" alt="Logo">
 
       <nav class="navbar" data-navbar>
         <ul class="navbar-list">
@@ -70,77 +72,28 @@
           <h1 class="h1 hero-title">
             Rações de alta qualidade<span class="span">para o seu pet</span>
           </h1>
-
         </div>
       </section>
 
       <!--CATEGORY-->
       <section class="section category" aria-label="category">
-        <div class="container">
+        <div class="container-gallery">
           <h2 class="h2 section-title">
-            <span class="span">Alimentação & Entreterimento</span> Garantidos
+            <span class="span">Alimetação e Entreterimento</span> Garantidos
           </h2>
-          <ul class="has-scrollbar">
-            <!--FIRURE 1-->
-            <li class="scrollbar-item">
-              <div class="category-card">
+          <div class="image-container">
+            <img id="selected-image" src="./assets/category-3.jpg" alt="Imagem Selecionada">
+          </div>
 
-                <figure class="card-banner img-holder" style="--width: 330; --height: 300;">
-                  <img src="./assets/category-3.jpg" width="330" height="300" loading="lazy" alt="Dog Food"
-                    class="img-cover">
-                </figure>
-
-                <h3 class="h3">
-                  <a href="#" class="card-title">Ração e petisco para cães</a>
-                </h3>
-
-              </div>
-            </li>
-            <!--FIRURE 2-->
-            <li class="scrollbar-item">
-              <div class="category-card">
-
-                <figure class="card-banner img-holder" style="--width: 330; --height: 300;">
-                  <img src="./assets/category-4.jpg" width="330" height="300" loading="lazy" alt="Dog Toys"
-                    class="img-cover">
-                </figure>
-
-                <h3 class="h3">
-                  <a href="#" class="card-title">Brinquedos para cães</a>
-                </h3>
-
-              </div>
-            </li>
-            <!--FIRURE 3-->
-            <li class="scrollbar-item">
-              <div class="category-card">
-
-                <figure class="card-banner img-holder" style="--width: 330; --height: 300;">
-                  <img src="./assets/category-1.jpg" width="330" height="300" loading="lazy" alt="Cat Food"
-                    class="img-cover">
-                </figure>
-
-                <h3 class="h3">
-                  <a href="#" class="card-title">Ração e petisco para gatos</a>
-                </h3>
-
-              </div>
-            </li>
-            <!--FIRURE 4-->
-            <li class="scrollbar-item">
-              <div class="category-card">
-
-                <figure class="card-banner img-holder" style="--width: 330; --height: 300;">
-                  <img src="./assets/category-2.jpg" width="330" height="300" loading="lazy" alt="Cat Toys"
-                    class="img-cover">
-                </figure>
-
-                <h3 class="h3">
-                  <a href="#" class="card-title">Brinquedos para gatos</a>
-                </h3>
-
-              </div>
-            </li>
+          <ul class="image-list">
+            <li><img src="./assets/category-3.jpg" alt="Ração para cachorro" loading="lazy"
+                onclick="selectImage('./assets/category-3.jpg', 'selected-image')"></li>
+            <li><img src="./assets/category-4.jpg" alt="Ração para cachorro" loading="lazy"
+                onclick="selectImage('./assets/category-4.jpg', 'selected-image')"></li>
+            <li><img src="./assets/category-1.jpg" alt="Ração para cachorro" loading="lazy"
+                onclick="selectImage('./assets/category-1.jpg', 'selected-image')"></li>
+            <li><img src="./assets/category-2.jpg" alt="Ração para cachorro" loading="lazy"
+                onclick="selectImage('./assets/category-2.jpg', 'selected-image')"></li>
           </ul>
         </div>
       </section>
@@ -188,165 +141,99 @@
         <div class="container">
 
           <h2 class="h2 section-title">
-            <span class="span">Principais</span> Produtos
+            <span class="span">Principais</span> Marcas
           </h2>
 
           <ul class="grid-list">
             <li>
               <div class="product-card">
                 <div class="card-banner img-holder" style="--width: 360; --height: 360;">
-                  <img src="./assets/product-1.jpg" width="360" height="360" loading="lazy" alt="Commodo leo sed porta"
+                  <img src="./assets/product-1.png" width="360" height="360" loading="lazy" alt="ração"
                     class="img-cover default">
-                  <img src="./assets/product-1_0.jpg" width="360" height="360" loading="lazy"
-                    alt="Commodo leo sed porta" class="img-cover hover">
-
-
                 </div>
-
                 <div class="card-content">
-                  <h3 class="h3">
-                    <a class="card-title">Commodo leo sed porta</a>
-                  </h3>
                 </div>
               </div>
             </li>
 
             <li>
               <div class="product-card">
-
                 <div class="card-banner img-holder" style="--width: 360; --height: 360;">
-                  <img src="./assets/product-2.jpg" width="360" height="360" loading="lazy"
-                    alt="Purus consequat congue sit" class="img-cover default">
-                  <img src="./assets/product-2_0.jpg" width="360" height="360" loading="lazy"
-                    alt="Purus consequat congue sit" class="img-cover hover">
-                </div>
-
-                <div class="card-content">
-
-                  <h3 class="h3">
-                    <a class="card-title">Purus consequat congue sit</a>
-                  </h3>
-                </div>
-
-              </div>
-            </li>
-
-            <li>
-              <div class="product-card">
-
-                <div class="card-banner img-holder" style="--width: 360; --height: 360;">
-                  <img src="./assets/product-3.jpg" width="360" height="360" loading="lazy"
-                    alt="Morbi vel arcu scelerisque" class="img-cover default">
-                  <img src="./assets/product-3_0.jpg" width="360" height="360" loading="lazy"
-                    alt="Morbi vel arcu scelerisque" class="img-cover hover">
-                </div>
-
-                <h3 class="h3">
-                  <a class="card-title">Morbi vel arcu scelerisque</a>
-                </h3>
-              </div>
-            </li>
-
-            <li>
-              <div class="product-card">
-
-                <div class="card-banner img-holder" style="--width: 360; --height: 360;">
-                  <img src="./assets/product-4.jpg" width="360" height="360" loading="lazy"
-                    alt="Morbi vel arcu scelerisque" class="img-cover default">
-                  <img src="./assets/product-4_0.jpg" width="360" height="360" loading="lazy"
-                    alt="Morbi vel arcu scelerisque" class="img-cover hover">
-                </div>
-
-                <h3 class="h3">
-                  <a class="card-title">Morbi vel arcu scelerisque</a>
-                </h3>
-              </div>
-            </li>
-
-            <li>
-              <div class="product-card">
-
-                <div class="card-banner img-holder" style="--width: 360; --height: 360;">
-                  <img src="./assets/product-5.jpg" width="360" height="360" loading="lazy"
-                    alt="Morbi vel arcu scelerisque" class="img-cover default">
-                  <img src="./assets/product-5_0.jpg" width="360" height="360" loading="lazy"
-                    alt="Morbi vel arcu scelerisque" class="img-cover hover">
-                </div>
-
-                <div class="card-content">
-
-                  <h3 class="h3">
-                    <a class="card-title">Toy food</a>
-                  </h3>
-                </div>
-
-              </div>
-            </li>
-
-            <li>
-              <div class="product-card">
-
-                <div class="card-banner img-holder" style="--width: 360; --height: 360;">
-                  <img src="./assets/product-6.jpg" width="360" height="360" loading="lazy"
-                    alt="Nam justo libero porta ege" class="img-cover default">
-                  <img src="./assets/product-6_0.jpg" width="360" height="360" loading="lazy"
-                    alt="Nam justo libero porta ege" class="img-cover hover">
-                </div>
-
-                <div class="card-content">
-
-                  <h3 class="h3">
-                    <a class="card-title">Nam justo libero porta ege</a>
-                  </h3>
-                </div>
-
-              </div>
-            </li>
-
-            <li>
-              <div class="product-card">
-
-                <div class="card-banner img-holder" style="--width: 360; --height: 360;">
-                  <img src="./assets/product-7.jpg" width="360" height="360" loading="lazy"
-                    alt="Nam justo libero porta ege" class="img-cover default">
-                  <img src="./assets/product-7_0.jpg" width="360" height="360" loading="lazy"
-                    alt="Nam justo libero porta ege" class="img-cover hover">
-                </div>
-
-                <div class="card-content">
-
-                  <h3 class="h3">
-                    <a class="card-title">Nam justo libero porta ege</a>
-                  </h3>
-                </div>
-
-              </div>
-            </li>
-
-            <li>
-              <div class="product-card">
-
-                <div class="card-banner img-holder" style="--width: 360; --height: 360;">
-                  <img src="./assets/product-8.jpg" width="360" height="360" loading="lazy" alt="Etiam commodo leo sed"
+                  <img src="./assets/product-2.png" width="360" height="360" loading="lazy" alt="ração"
                     class="img-cover default">
-                  <img src="./assets/product-8_0.jpg" width="360" height="360" loading="lazy"
-                    alt="Etiam commodo leo sed" class="img-cover hover">
                 </div>
-
                 <div class="card-content">
-
-                  <h3 class="h3">
-                    <a class="card-title">Etiam commodo leo sed</a>
-                  </h3>
                 </div>
-
               </div>
             </li>
 
+            <li>
+              <div class="product-card">
+                <div class="card-banner img-holder" style="--width: 360; --height: 360;">
+                  <img src="./assets/product-3.png" width="360" height="360" loading="lazy" alt="ração"
+                    class="img-cover default">
+                </div>
+                <div class="card-content">
+                </div>
+              </div>
+            </li>
+
+            <li>
+              <div class="product-card">
+                <div class="card-banner img-holder" style="--width: 360; --height: 360;">
+                  <img src="./assets/product-4.png" width="360" height="360" loading="lazy" alt="ração"
+                    class="img-cover default">
+                </div>
+                <div class="card-content">
+                </div>
+              </div>
+            </li>
+
+            <li>
+              <div class="product-card">
+                <div class="card-banner img-holder" style="--width: 360; --height: 360;">
+                  <img src="./assets/product-5.png" width="360" height="360" loading="lazy" alt="ração"
+                    class="img-cover default">
+                </div>
+                <div class="card-content">
+                </div>
+              </div>
+            </li>
+
+            <li>
+              <div class="product-card">
+                <div class="card-banner img-holder" style="--width: 360; --height: 360;">
+                  <img src="./assets/product-6.png" width="360" height="360" loading="lazy" alt="ração"
+                    class="img-cover default">
+                </div>
+                <div class="card-content">
+                </div>
+              </div>
+            </li>
+
+            <li>
+              <div class="product-card">
+                <div class="card-banner img-holder" style="--width: 360; --height: 360;">
+                  <img src="./assets/product-7.png" width="360" height="360" loading="lazy" alt="ração"
+                    class="img-cover default">
+                </div>
+                <div class="card-content">
+                </div>
+              </div>
+            </li>
+
+            <li>
+              <div class="product-card">
+                <div class="card-banner img-holder" style="--width: 360; --height: 360;">
+                  <img src="./assets/product-8.png" width="360" height="360" loading="lazy" alt="ração"
+                    class="img-cover default">
+                </div>
+                <div class="card-content">
+                </div>
+              </div>
+            </li>
           </ul>
-
         </div>
-
       </section>
 
       <!--SERVICE-->
@@ -376,8 +263,9 @@
 
                 <h3 class="h3 card-title">Pet Táxi</h3>
 
-                <p class="card-text">Serviço de transporte seguro e confiável para levar e buscar seu Pet (consulte a
-                  região disponível). </p>
+                <p class="card-text">Serviço de transporte seguro e confiável para levar e buscar seu Pet <span
+                    class="span">(consulte a
+                    região disponível).</span> </p>
               </div>
             </li>
 
@@ -413,15 +301,14 @@
             <h2 class="h2 section-title">Experimente, ame ou substitua!</h2>
 
             <p class="section-text">Na Pets Juntos e Misturados, acreditamos que seu cão e/ou gato vão adorar tanto a
-              nossa
-              comida que, se não gostarem, ajudaremos você a encontrar uma substituta.
+              nossa comida que, se não gostarem, ajudaremos você a encontrar uma substituta.
             </p>
 
             <a href="https://api.whatsapp.com/message/ZZKF6WYD7NQ3O1?autoload=1&app_absent=0" class="btn">Saiba mais</a>
           </div>
 
           <figure class="cta-banner">
-            <img src="./assets/cta-banner.png" width="900" height="660" loading="lazy" alt="cat" class="w-100">
+            <img src="./assets/cta-banner.png" loading="lazy" alt="cat" class="w-100">
           </figure>
 
         </div>
@@ -430,57 +317,41 @@
       <!--CLIENTS-->
       <section class="section clients" aria-label="clients">
 
-        <div class="container">
+        <div class="container-gallery">
           <h2 class="h2 section-title">
             <span class="span">Alguns de nossos</span> clientes
           </h2>
 
-          <ul class="has-scrollbar">
-            <li class="scrollbar-item">
-              <div class="brand-card img-holder" style="--width: 150; --height: 150;">
-                <img src="./assets/brand-1.jpg" style="--width: 150; --height: 150" loading="lazy" alt="brand logo"
-                  class="img-cover">
-              </div>
-            </li>
+          <div class="image-container">
+            <img id="selected-image-2" src="./assets/brand-1.jpg" alt="Imagem Selecionada">
+          </div>
 
-            <li class="scrollbar-item">
-              <div class="brand-card img-holder" style="--width: 150; --height: 150;">
-                <img src="./assets/brand-2.jpg" style="--width: 150; --height: 150" loading="lazy" alt="brand logo"
-                  class="img-cover">
-              </div>
-            </li>
+          <ul class="image-list">
+            <li><img src="./assets/brand-1.jpg" alt="cachorro" loading="lazy"
+                onclick="selectImage('./assets/brand-1.jpg', 'selected-image-2')"></li>
 
-            <li class="scrollbar-item">
-              <div class="brand-card img-holder" style="--width: 150; --height: 150;">
-                <img src="./assets/brand-3.jpg" style="--width: 150; --height: 150" loading="lazy" alt="brand logo"
-                  class="img-cover">
-              </div>
-            </li>
+            <li><img src="./assets/brand-2.jpg" alt="cachorro" loading="lazy"
+                onclick="selectImage('./assets/brand-2.jpg', 'selected-image-2')"></li>
 
-            <li class="scrollbar-item">
-              <div class="brand-card img-holder" style="--width: 150; --height: 150;">
-                <img src="./assets/brand-4.jpg" style="--width: 150; --height: 150" loading="lazy" alt="brand logo"
-                  class="img-cover">
-              </div>
-            </li>
+            <li><img src="./assets/brand-3.jpg" alt="cachorro" loading="lazy"
+                onclick="selectImage('./assets/brand-3.jpg', 'selected-image-2')"></li>
 
-            <li class="scrollbar-item">
-              <div class="brand-card img-holder" style="--width: 150; --height: 150;">
-                <img src="./assets/brand-5.jpg" style="--width: 150; --height: 150" loading="lazy" alt="brand logo"
-                  class="img-cover">
-              </div>
-            </li>
+            <li><img src="./assets/brand-4.jpg" alt="cachorro" loading="lazy"
+                onclick="selectImage('./assets/brand-4.jpg', 'selected-image-2')"></li>
 
-            <li class="scrollbar-item">
-              <div class="brand-card img-holder" style="--width: 150; --height: 150;">
-                <img src="./assets/brand-6.png" style="--width: 150; --height: 150" loading="lazy" alt="brand logo"
-                  class="img-cover">
-              </div>
-            </li>
+            <li><img src="./assets/brand-5.jpg" alt="cachorro" loading="lazy"
+                onclick="selectImage('./assets/brand-5.jpg', 'selected-image-2')"></li>
 
+            <li><img src="./assets/brand-6.jpg" alt="cachorro" loading="lazy"
+                onclick="selectImage('./assets/brand-6.jpg', 'selected-image-2')"></li>
+
+            <li><img src="./assets/brand-7.jpg" alt="cachorro" loading="lazy"
+                onclick="selectImage('./assets/brand-7.jpg', 'selected-image-2')"></li>
+
+            <li><img src="./assets/brand-8.jpg" alt="cachorro" loading="lazy"
+                onclick="selectImage('./assets/brand-8.jpg', 'selected-image-2')"></li>
           </ul>
         </div>
-
       </section>
 
       <!--ABOUT-->
@@ -511,7 +382,7 @@
   <footer class="footer">
 
     <div class="footer-top section">
-      <div class="container">
+      <div id="contact" class="container">
 
         <p class="footer-text">
           Se conecte conosco e se houver alguma dúvida, entre em contato:
@@ -541,7 +412,7 @@
               class="img-contact"><ion-icon name="location-outline" class="address-icon" aria-hidden="true"
                 sty></ion-icon></a>
             <a href="http s://www.google.com/maps/place/Rua+Sanclerl%C3%A2ndia,+3a+-+Jardim+Pirituba,+S%C3%A3o+Paulo+-+SP,+02985-040/@-23.4424038,-46.7238789,17z/data=!3m1!4b1!4m27!1m20!1m16!4m15!1m6!1m2!1s0x94cef9dbbdcee063:0xe050b0f1686c8b27!2sR.+Lucindo+Passos+Filho,+180+-+Brasil%C3%A2ndia,+S%C3%A3o+Paulo+-+SP,+02865-040,+Brasil!2m2!1d-46.6769235!2d-23.4735969!1m6!1m2!1s0x15771b00cefa903:0xa2fb9889af445d06!2sTorre+III,+Av.+Guido+Caloi,+1002+-+Jardim+S%C3%A3o+Lu%C3%ADs,+S%C3%A3o+Paulo+-+SP,+05802-140!2m2!1d-46.7254916!2d-23.6540817!3e0!2m2!3m1!5e2!3m5!1s0x94cefbb8ff7070d7:0xb2e49add852ea74a!8m2!3d-23.4424087!4d-46.721304!16s%2Fg%2F11hb70b8nd?entry=ttu"
-              class="contact-link" target="_blank">Rua Sanclerlândia, 3a - Jardim Pirituba</a>
+              class="contact-link" target="_blank">Rua Sanclerlândia, 3A - Jardim Pirituba</a>
           </li>
         </ul>
       </div>
@@ -550,13 +421,13 @@
 
     <div class="footer-bottom">
       <div class="container">
-        <p class="copyright">
-          <a href="https://portifoliodavialexandre.netlify.app/" class="copyright-link">&copy; 2024 Davi Alexandre.
-            Todos os direitos reservados.</a>
-        </p>
-
         <img src="./assets/payment.png" width="397" height="32" loading="lazy" alt="payment method" class="img">
       </div>
+
+      <p class="copyright">
+        <a href="https://portifoliodavialexandre.netlify.app/" class="copyright-link">&copy; 2024 Davi Alexandre.
+          Todos os direitos reservados.</a>
+      </p>
     </div>
 
   </footer>
@@ -568,7 +439,6 @@
 
   <a href="https://api.whatsapp.com/message/ZZKF6WYD7NQ3O1?autoload=1&app_absent=0" class="logo-whats"
     target="_blank"><img class="logo-whats" src="./assets/whatsApp-logo.png" alt="Logo WhatsApp"></a>
-
 </body>
 
 </html>
