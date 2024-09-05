@@ -1,5 +1,14 @@
 'use strict';
 
+/*ANIMATION*/
+// window.sr = ScrollReveal({ reset: true });
+
+// sr.reveal('.logo, h1, h2, .img, link', {
+//   rotate: { x: 100, y: 0, z: 0 },
+//   duration: 2000
+// })
+
+
 /*Adicionar evento ao Nav (Mostrar - Ocultar)*/
 const addEventOnElem = function (elem, type, callback) {
   /*Se for uma lista: */
@@ -13,7 +22,6 @@ const addEventOnElem = function (elem, type, callback) {
   }
 }
 
-/*Alternância da barra de navegação*/
 const navToggler = document.querySelector('[data-nav-toggler]');
 const navbar = document.querySelector('[data-navbar]');
 const navbarLinks = document.querySelectorAll('[data-nav-link]');
@@ -50,5 +58,12 @@ addEventOnElem(window, 'scroll', activeElemOnScroll);
 
 
 
-/*TESTE*/
-
+/*GALLERY*/
+function selectImage(src, targetId) {
+  const target = document.getElementById(targetId);
+  target.classList.add('fade');
+  setTimeout(() => {
+    target.src = src;
+    target.classList.remove('fade');
+  }, 500);
+}
