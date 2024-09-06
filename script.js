@@ -1,12 +1,28 @@
 'use strict';
 
 /*ANIMATION*/
-// window.sr = ScrollReveal({ reset: true });
+ScrollReveal().reveal('header, figure, img, .has-bg-image', {
+  duration: 1000,
+});
 
-// sr.reveal('.logo, h1, h2, .img, link', {
-//   rotate: { x: 100, y: 0, z: 0 },
-//   duration: 2000
-// })
+ScrollReveal().reveal('h1, h2, h3', {
+  distance: '50px',
+  origin: 'top',
+  duration: 2000,
+})
+
+ScrollReveal().reveal('p, .contact-list', {
+  distance: '50px',
+  origin: 'left',
+  duration: 3000,
+});
+
+ScrollReveal().reveal('.li-offers, .image-list', {
+  distance: '50px',
+  origin: 'bottom',
+  duration: 3000,
+});
+
 
 
 /*Adicionar evento ao Nav (Mostrar - Ocultar)*/
@@ -57,7 +73,6 @@ const activeElemOnScroll = function () {
 addEventOnElem(window, 'scroll', activeElemOnScroll);
 
 
-
 /*GALLERY*/
 function selectImage(src, targetId) {
   const target = document.getElementById(targetId);
@@ -65,5 +80,5 @@ function selectImage(src, targetId) {
   setTimeout(() => {
     target.src = src;
     target.classList.remove('fade');
-  }, 500);
+  }, 300);
 }

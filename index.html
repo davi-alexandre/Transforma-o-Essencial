@@ -17,6 +17,9 @@
     rel="stylesheet">
   <link rel="stylesheet" href="./style.css">
   <script src="https://unpkg.com/scrollreveal"></script>
+  <script>
+    ScrollReveal({ reset: true });
+  </script>
   <script src="./script.js" defer></script>
   <script type="module" src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.esm.js"></script>
   <script nomodule src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.js"></script>
@@ -76,7 +79,7 @@
       </section>
 
       <!--CATEGORY-->
-      <section class="section category" aria-label="category">
+      <section class="section category" id="category" aria-label="category">
         <div class="container-gallery">
           <h2 class="h2 section-title">
             <span class="span">Alimetação e Entreterimento</span> Garantidos
@@ -103,7 +106,7 @@
         <div class="container">
 
           <ul class="grid-list">
-            <li>
+            <li class="li-offers">
               <div class="offer-card has-bg-image img-holder"
                 style="background-image: url('./assets/offer-banner-1.jpg'); --width: 540; --height: 374;">
                 <h3 class="h3 card-title">
@@ -112,7 +115,7 @@
               </div>
             </li>
 
-            <li>
+            <li class="li-offers">
               <div class="offer-card has-bg-image img-holder"
                 style="background-image: url('./assets/offer-banner-2.jpg'); --width: 540; --height: 374;">
                 <h3 class="h3 card-title">
@@ -121,7 +124,7 @@
               </div>
             </li>
 
-            <li>
+            <li class="li-offers">
               <div class="offer-card has-bg-image img-holder"
                 style="background-image: url('./assets/offer-banner-3.jpg'); --width: 540; --height: 374;">
                 <h3 class="h3 card-title">
@@ -290,7 +293,7 @@
       </section>
 
       <!--CTA-->
-      <section class="cta has-bg-image" aria-label="cta" style="background-image: url('./assets/cta-bg.jpg');">
+      <section id="cta" class="cta has-bg-image" aria-label="cta" style="background-image: url('./assets/cta-bg.jpg');">
         <div class="container">
           <div class="cta-content">
             <div class="cta-icon">
@@ -315,7 +318,7 @@
       </section>
 
       <!--CLIENTS-->
-      <section class="section clients" aria-label="clients">
+      <section id="clients" class="section clients" aria-label="clients">
 
         <div class="container-gallery">
           <h2 class="h2 section-title">
