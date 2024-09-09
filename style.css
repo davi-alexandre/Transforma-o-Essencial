@@ -294,60 +294,6 @@ body {
   color: var(--green-logo);
 }
 
-
-
-/*CATEGORY | GALLERY*/
-.container-gallery {
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  justify-content: center;
-}
-
-.image-container {
-  margin: 10px;
-}
-
-.image-container img {
-  border-radius: 10%;
-  max-height: 350px;
-  max-width: 70vw;
-}
-
-.image-list {
-  display: flex;
-  flex-wrap: wrap;
-  align-items: center;
-  justify-content: center;
-  gap: 10px;
-  max-width: 90vw;
-}
-
-.image-list li {
-  cursor: pointer;
-}
-
-.image-list img {
-  max-width: 50px;
-  min-width: 50px;
-  max-height: 50px;
-  min-height: 50px;
-  object-fit: cover;
-  border-radius: 50px;
-  border: 2px solid var(--portland-orange);
-  transition: var(--transition-1);
-}
-
-.image-list img:hover {
-  transform: scale(1.1);
-}
-
-.fade {
-  opacity: 0.1;
-  transition: opacity 0.5s ease-in-out;
-}
-
-
 /*OFFERS*/
 .offer-card {
   border-radius: var(--radius-10);
@@ -375,7 +321,6 @@ body {
   border: 1px solid var(--portland-orange);
   border-radius: var(--radius-10);
   margin-block-end: 20px;
-  padding: 10px;
   background-color: var(--white);
 }
 
@@ -482,6 +427,58 @@ body {
   margin-inline: auto;
   border-radius: 25px;
 }
+
+
+.container-gallery {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+}
+
+.image-container {
+  margin: 10px;
+}
+
+.image-container img {
+  border-radius: 10%;
+  max-height: 250px;
+  max-width: 70vw;
+}
+
+.image-list {
+  display: flex;
+  flex-wrap: wrap;
+  align-items: center;
+  justify-content: center;
+  gap: 10px;
+  max-width: 90vw;
+}
+
+.image-list li {
+  cursor: pointer;
+}
+
+.image-list img {
+  max-width: 40px;
+  min-width: 40px;
+  max-height: 40px;
+  min-height: 40px;
+  object-fit: cover;
+  border-radius: 50px;
+  border: 2px solid var(--portland-orange);
+  transition: var(--transition-1);
+}
+
+.image-list img:hover {
+  transform: scale(1.1);
+}
+
+.fade {
+  opacity: 0.1;
+  transition: opacity 0.5s ease-in-out;
+}
+
 
 /*ABOUT*/
 .about-p {
@@ -857,10 +854,6 @@ body {
     margin-block-start: 0;
   }
 
-
-  /*CATEGORY*/
-
-
   /*SERVICE*/
   .service .img {
     width: 30vw;
@@ -868,6 +861,12 @@ body {
 
   .service-card .h3 {
     --fs-3: 2.4rem;
+  }
+
+  /*CLIENTS*/
+  .image-container img {
+    border-radius: 10%;
+    min-height: 350px;
   }
 
   /*BRAND*/
@@ -898,6 +897,12 @@ body {
 
   .service .img {
     width: 30vw;
+  }
+
+   /*CLIENTS*/
+   .image-container img {
+    border-radius: 10%;
+    min-height: 500px;
   }
 
   /*CTA*/
