@@ -562,6 +562,7 @@ body {
 
 .copyright-link {
   display: inline-block;
+  margin-bottom: 20px;
 }
 
 .footer-bottom .container {
