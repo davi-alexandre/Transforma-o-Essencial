@@ -384,10 +384,10 @@ body {
 
 .cta-content {
   padding-block: 80px var(--section-padding);
+  margin: 0;
 }
 
 .cta-icon {
-  margin-block-start: 30px;
   display: flex;
   justify-content: flex-start;
   align-items: center;

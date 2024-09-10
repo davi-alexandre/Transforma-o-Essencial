@@ -1,27 +1,11 @@
 'use strict';
 
 /*ANIMATION*/
-ScrollReveal().reveal('header, figure, img, .has-bg-image', {
-  duration: 1000,
-});
-
-ScrollReveal().reveal('h1, h2, h3', {
-  distance: '50px',
-  origin: 'top',
-  duration: 2000,
-})
-
-ScrollReveal().reveal('p, .contact-list', {
-  distance: '50px',
-  origin: 'left',
-  duration: 3000,
-});
-
-ScrollReveal().reveal('.li-offers, .image-list', {
-  distance: '50px',
-  origin: 'bottom',
-  duration: 3000,
-});
+ScrollReveal().reveal('.logo', { duration: 1000, distance: '50px', origin: 'top', cleanup: true });
+ScrollReveal().reveal('.hero-title', { duration: 1000, distance: '50px', origin: 'left', cleanup: true });
+ScrollReveal().reveal('.offer-card', { duration: 1000, distance: '50px', origin: 'left', interval: 300, cleanup: true });
+ScrollReveal().reveal('.product-card', { duration: 1000, distance: '50px', origin: 'bottom', interval: 200, cleanup: true });
+ScrollReveal().reveal('.service-card, #logo-service', { duration: 1000, distance: '50px', origin: 'bottom', interval: 100, cleanup: true });
 
 
 
