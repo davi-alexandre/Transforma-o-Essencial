@@ -19,3 +19,5 @@ Este projeto envolveu a criação de um site desde o início, incluindo a criaç
 - CSS
 - JavaScript
 - ScrollReveal
+
+## Deploy: https://petsjuntosmisturados.com/
