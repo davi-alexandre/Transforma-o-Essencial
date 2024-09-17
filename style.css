@@ -410,6 +410,10 @@ body {
   margin-block-end: 30px;
 }
 
+.cta .btn{ 
+ width: 200px;
+}
+
 .cta .btn:is(:hover, :focus) {
   background-color: var(--white);
   color: var(--black);
