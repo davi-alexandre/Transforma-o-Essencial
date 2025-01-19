@@ -1,13 +1,52 @@
-'use strict';
+"use strict";
 
 /*ANIMATION*/
-ScrollReveal().reveal('.logo', { duration: 1000, distance: '50px', origin: 'top', cleanup: true });
-ScrollReveal().reveal('.hero-title', { duration: 1000, distance: '50px', origin: 'left', cleanup: true });
-ScrollReveal().reveal('.offer-card', { duration: 1000, distance: '50px', origin: 'left', interval: 300, cleanup: true });
-ScrollReveal().reveal('.product-card', { duration: 1000, distance: '50px', origin: 'bottom', interval: 200, cleanup: true });
-ScrollReveal().reveal('.service-card, #logo-service', { duration: 1000, distance: '50px', origin: 'bottom', interval: 100, cleanup: true });
-
-
+ScrollReveal().reveal(".hero-title", {
+  duration: 1000,
+  distance: "50px",
+  origin: "left",
+  cleanup: true,
+});
+ScrollReveal().reveal("#about", {
+  duration: 1000,
+  distance: "50px",
+  origin: "left",
+  interval: 600,
+  cleanup: true,
+});
+ScrollReveal().reveal("#participar", {
+  duration: 1000,
+  distance: "50px",
+  origin: "bottom",
+  interval: 200,
+  cleanup: true,
+});
+ScrollReveal().reveal(".service-card, #logo-service", {
+  duration: 1000,
+  distance: "50px",
+  origin: "bottom",
+  interval: 100,
+  cleanup: true,
+});
+ScrollReveal().reveal("#faq", {
+  duration: 1000,
+  distance: "50px",
+  origin: "left",
+  cleanup: true,
+});
+ScrollReveal().reveal("#provas-sociais", {
+  duration: 1000,
+  distance: "50px",
+  origin: "bottom",
+  interval: 100,
+  cleanup: true,
+});
+ScrollReveal().reveal(".footer", {
+  duration: 1000,
+  distance: "50px",
+  origin: "left",
+  cleanup: true,
+});
 
 /*Adicionar evento ao Nav (Mostrar - Ocultar)*/
 const addEventOnElem = function (elem, type, callback) {
@@ -18,51 +57,50 @@ const addEventOnElem = function (elem, type, callback) {
     }
     /*Se for um elemento: */
   } else {
-    elem.addEventListener(type, callback)
+    elem.addEventListener(type, callback);
   }
-}
+};
 
-const navToggler = document.querySelector('[data-nav-toggler]');
-const navbar = document.querySelector('[data-navbar]');
-const navbarLinks = document.querySelectorAll('[data-nav-link]');
+const navToggler = document.querySelector("[data-nav-toggler]");
+const navbar = document.querySelector("[data-navbar]");
+const navbarLinks = document.querySelectorAll("[data-nav-link]");
 
 const toggleNavbar = function () {
-  navbar.classList.toggle('active');
-  navToggler.classList.toggle('active');
-}
+  navbar.classList.toggle("active");
+  navToggler.classList.toggle("active");
+};
 
-addEventOnElem(navToggler, 'click', toggleNavbar);
+addEventOnElem(navToggler, "click", toggleNavbar);
 
 const closeNavbar = function () {
-  navbar.classList.remove('active');
-  navToggler.classList.remove('active');
-}
+  navbar.classList.remove("active");
+  navToggler.classList.remove("active");
+};
 
-addEventOnElem(navbarLinks, 'click', closeNavbar);
+addEventOnElem(navbarLinks, "click", closeNavbar);
 
 /*botão home ativo quando o usuário rola a tela para baixo*/
-const backTopBtn = document.querySelector("[data-back-top-btn]")
-const header = document.querySelector("[data-header]")
+const backTopBtn = document.querySelector("[data-back-top-btn]");
+const header = document.querySelector("[data-header]");
 
 const activeElemOnScroll = function () {
   if (window.scrollY > 100) {
-    header.classList.add('active');
-    backTopBtn.classList.add('active');
+    header.classList.add("active");
+    backTopBtn.classList.add("active");
   } else {
-    header.classList.remove('active');
-    backTopBtn.classList.remove('active');
+    header.classList.remove("active");
+    backTopBtn.classList.remove("active");
   }
-}
+};
 
-addEventOnElem(window, 'scroll', activeElemOnScroll);
-
+addEventOnElem(window, "scroll", activeElemOnScroll);
 
 /*GALLERY*/
 function selectImage(src, targetId) {
   const target = document.getElementById(targetId);
-  target.classList.add('fade');
+  target.classList.add("fade");
   setTimeout(() => {
     target.src = src;
-    target.classList.remove('fade');
+    target.classList.remove("fade");
   }, 300);
 }

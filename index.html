@@ -1,431 +1,406 @@
 <!DOCTYPE html>
 <html lang="pt-br">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="ie=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Transformação Essencial</title>
+    <meta name="title" content="Pets Juntos e Misturados" />
+    <meta
+      name="description"
+      content="Pets Juntos e Misturados: Seu destino online para produtos e serviços de alta qualidade para pets. Explore nossa seleção de alimentos, acessórios e cuidados especializados para seu animal de estimação."
+    />
+    <link rel="shortcut icon" href="./assets/logo.png" type="image/svg+xml" />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Bangers&family=Carter+One&family=Nunito+Sans:wght@400;700&display=swap"
+      rel="stylesheet"
+    />
+    <link rel="stylesheet" href="./style.css" />
+    <script src="https://unpkg.com/scrollreveal"></script>
+    <script>
+      ScrollReveal({ reset: true });
+    </script>
+    <script src="./script.js" defer></script>
+    <script
+      type="module"
+      src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.esm.js"
+    ></script>
+    <script
+      nomodule
+      src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.js"
+    ></script>
+    <!--PRÉ-CARREGAR IMAGENS-->
+    <link rel="preload" as="image" href="./assets/hero-banner.jpg" />
+  </head>
 
-<head>
-  <meta charset="UTF-8">
-  <meta http-equiv="X-UA-Compatible" content="ie=edge">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Pets Juntos e Misturados</title>
-  <meta name="title" content="Pets Juntos e Misturados">
-  <meta name="description"
-    content="Pets Juntos e Misturados: Seu destino online para produtos e serviços de alta qualidade para pets. Explore nossa seleção de alimentos, acessórios e cuidados especializados para seu animal de estimação.">
-  <link rel="shortcut icon" href="./assets/favicon.png" type="image/svg+xml">
-  <link rel="preconnect" href="https://fonts.googleapis.com">
-  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-  <link
-    href="https://fonts.googleapis.com/css2?family=Bangers&family=Carter+One&family=Nunito+Sans:wght@400;700&display=swap"
-    rel="stylesheet">
-  <link rel="stylesheet" href="./style.css">
-  <script src="https://unpkg.com/scrollreveal"></script>
-  <script>
-    ScrollReveal({ reset: true });
-  </script>
-  <script src="./script.js" defer></script>
-  <script type="module" src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.esm.js"></script>
-  <script nomodule src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.js"></script>
-  <!--PRÉ-CARREGAR IMAGENS-->
-  <link rel="preload" as="image" href="./assets/hero-banner.jpg">
-</head>
+  <body id="top">
+    <!--HEADER-->
+    <header class="header" data-header>
+      <div class="container">
+        <img src="./assets/logo.png" class="logo" alt="Logo" />
+        <button
+          class="nav-toggle-btn"
+          aria-label="toggle manu"
+          data-nav-toggler
+        >
+          <ion-icon
+            name="menu-outline"
+            aria-hidden="true"
+            class="menu-icon"
+          ></ion-icon>
+          <ion-icon
+            name="close-outline"
+            aria-label="true"
+            class="close-icon"
+          ></ion-icon>
+        </button>
 
-<body id="top">
-  <!--HEADER-->
-
-  <header class="header" data-header>
-
-    <div class="container">
-      <img src="./assets/logo.png" class="logo" alt="Logo">
-      <button class="nav-toggle-btn" aria-label="toggle manu" data-nav-toggler>
-        <ion-icon name="menu-outline" aria-hidden="true" class="menu-icon"></ion-icon>
-        <ion-icon name="close-outline" aria-label="true" class="close-icon"></ion-icon>
-      </button>
-
-      <nav class="navbar" data-navbar>
-        <ul class="navbar-list">
-          <li class="navbar-item">
-            <a href="#home" class="navbar-link" data-nav-link>Home</a>
-          </li>
-
-          <li class="navbar-item">
-            <a href="#products" class="navbar-link" data-nav-link>Produtos</a>
-          </li>
-
-          <li class="navbar-item">
-            <a href="#service" class="navbar-link" data-nav-link>Serviços</a>
-          </li>
-
-          <li class="navbar-item">
-            <a href="#about" class="navbar-link" data-nav-link>Sobre</a>
-          </li>
-
-          <li class="navbar-item">
-            <a href="#contact" class="navbar-link" data-nav-link>Contato</a>
-          </li>
-
-        </ul>
-      </nav>
-    </div>
-  </header>
-
-  <main>
-    <article>
-      <!--HERO-->
-      <section class="section hero has-bg-image" id="home" aria-label="home"
-        style="background-image: url('./assets/hero-banner.jpg');">
-        <div class="container">
-          <h1 class="h1 hero-title">
-            Rações de alta qualidade<span class="span">para o seu pet</span>
-          </h1>
-        </div>
-      </section>
-
-      <!--OFFERS-->
-      <section class="section offer" aria-label="offer">
-        <div class="container">
-
-          <ul class="grid-list">
-            <li class="li-offers">
-              <div class="offer-card has-bg-image img-holder"
-                style="background-image: url('./assets/offer-banner-1.jpg'); --width: 540; --height: 374;">
-                <h3 class="h3 card-title">
-                  Planos mensais de banho e tosa
-                </h3>
-              </div>
+        <nav class="navbar" data-navbar>
+          <ul class="navbar-list">
+            <li class="navbar-item">
+              <a href="#participar" class="navbar-link" data-nav-link
+                >Participar</a
+              >
             </li>
 
-            <li class="li-offers">
-              <div class="offer-card has-bg-image img-holder"
-                style="background-image: url('./assets/offer-banner-2.jpg'); --width: 540; --height: 374;">
-                <h3 class="h3 card-title">
-                  Mimos e Brinquedos especiais
-                </h3>
-              </div>
+            <li class="navbar-item">
+              <a href="#faq" class="navbar-link" data-nav-link>FAQ</a>
             </li>
 
-            <li class="li-offers">
-              <div class="offer-card has-bg-image img-holder"
-                style="background-image: url('./assets/offer-banner-3.jpg'); --width: 540; --height: 374;">
-                <h3 class="h3 card-title">
-                  Sementes, Rações, medicamentos e Suplementos
-                </h3>
-              </div>
+            <li class="navbar-item">
+              <a href="#provas-sociais" class="navbar-link" data-nav-link
+                >Provas Sociais</a
+              >
             </li>
 
-          </ul>
-
-        </div>
-      </section>
-
-      <!--PRODUCT-->
-      <section class="section product" id="products" aria-label="product">
-
-        <div class="container">
-
-          <h2 class="h2 section-title">
-            <span class="span">Rações, Medicamentos, Suplementos, Brinquedos</span> e muito mais!
-          </h2>
-
-          <ul class="grid-list">
-            <li>
-              <div class="product-card">
-                <div class="card-banner img-holder" style="--width: 360; --height: 360;">
-                  <img src="./assets/product-1.png" width="360" height="360" loading="lazy" alt="ração"
-                    class="img-cover default">
-                </div>
-                <div class="card-content">
-                </div>
-              </div>
-            </li>
-
-            <li>
-              <div class="product-card">
-                <div class="card-banner img-holder" style="--width: 360; --height: 360;">
-                  <img src="./assets/product-2.png" width="360" height="360" loading="lazy" alt="ração"
-                    class="img-cover default">
-                </div>
-                <div class="card-content">
-                </div>
-              </div>
-            </li>
-
-            <li>
-              <div class="product-card">
-                <div class="card-banner img-holder" style="--width: 360; --height: 360;">
-                  <img src="./assets/product-3.jpg" width="360" height="360" loading="lazy" alt="ração"
-                    class="img-cover default">
-                </div>
-                <div class="card-content">
-                </div>
-              </div>
-            </li>
-
-            <li>
-              <div class="product-card">
-                <div class="card-banner img-holder" style="--width: 360; --height: 360;">
-                  <img src="./assets/product-4.png" width="360" height="360" loading="lazy" alt="ração"
-                    class="img-cover default">
-                </div>
-                <div class="card-content">
-                </div>
-              </div>
-            </li>
-
-            <li>
-              <div class="product-card">
-                <div class="card-banner img-holder" style="--width: 360; --height: 360;">
-                  <img src="./assets/product-5.png" width="360" height="360" loading="lazy" alt="ração"
-                    class="img-cover default">
-                </div>
-                <div class="card-content">
-                </div>
-              </div>
-            </li>
-
-            <li>
-              <div class="product-card">
-                <div class="card-banner img-holder" style="--width: 360; --height: 360;">
-                  <img src="./assets/product-6.png" width="360" height="360" loading="lazy" alt="ração"
-                    class="img-cover default">
-                </div>
-                <div class="card-content">
-                </div>
-              </div>
-            </li>
-
-            <li>
-              <div class="product-card">
-                <div class="card-banner img-holder" style="--width: 360; --height: 360;">
-                  <img src="./assets/product-7.png" width="360" height="360" loading="lazy" alt="ração"
-                    class="img-cover default">
-                </div>
-                <div class="card-content">
-                </div>
-              </div>
-            </li>
-
-            <li>
-              <div class="product-card">
-                <div class="card-banner img-holder" style="--width: 360; --height: 360;">
-                  <img src="./assets/product-8.jpeg" width="360" height="360" loading="lazy" alt="ração"
-                    class="img-cover default">
-                </div>
-                <div class="card-content">
-                </div>
-              </div>
+            <li class="navbar-item">
+              <a href="#contato" class="navbar-link" data-nav-link>Contato</a>
             </li>
           </ul>
-        </div>
-      </section>
+        </nav>
+      </div>
+    </header>
 
-      <!--SERVICE-->
-      <section id="service" class="section service" aria-label="service">
+    <main>
+      <article>
+        <!--HERO-->
+        <section
+          class="section hero has-bg-image"
+          id="home"
+          aria-label="home"
+          style="background-image: url('./assets/hero-banner.jpg')"
+        >
+          <div class="container">
+            <h1 class="h1 hero-title">
+              Transformação Essencial
+              <br />Rumo ao equilíbrio:<span class="span"
+                >Cuide de você, mesmo com a rotina cheia!
+              </span>
+            </h1>
+          </div>
+        </section>
 
-        <div class="container">
+        <!--Descrição Rápida do Desafio-->
+        <section id="about" class="section about" aria-label="about">
+          <div class="container">
+            <h2 class="h2 section-title">
+              <span class="span">Descrição </span>Rápida
+            </h2>
+            <p class="p about-p">
+              Você trabalha, treina, cuida da casa e da família... e sempre
+              acaba se deixando para depois? No desafio Transformação Essencial,
+              de apenas 30 dias, você vai aprender a melhorar seus hábitos
+              alimentares com pequenas mudanças, adaptadas ao seu dia a dia.
+              Mais saúde, energia e leveza, sem sofrimento!
+            </p>
+          </div>
+        </section>
 
-          <h2 class="h2 section-title">
-            Nossos <span class="span">Serviços</span>
-          </h2>
+        <!--Benefícios-->
+        <section id="about" class="section about" aria-label="about">
+          <div class="container">
+            <h2 class="h2 section-title">
+              Benefícios do<span class="span"> Desafio</span>
+            </h2>
+            <p class="p about-p">
+              Reduza o consumo de doces e ultraprocessados, sem proibições.
+              Aprenda a organizar refeições simples e saudáveis, mesmo com pouco
+              tempo. Melhore sua disposição e bem-estar para aguentar a correria
+              do dia a dia. Transforme pequenos passos em hábitos duradouros,
+              que realmente funcionam. Tenha uma vida saudável, mesmo que com
+              pouco tempo!
+            </p>
+          </div>
+        </section>
 
-          <img id="logo-service" src="./assets/logo.png" width="122" height="136" loading="lazy" alt="logo" class="img">
+        <!--Como Funciona-->
+        <section id="about" class="section about" aria-label="about">
+          <div class="container">
+            <h2 class="h2 section-title">
+              <span class="span">Como </span>funciona
+            </h2>
+            <p class="p about-p">
+              Um plano simples, passo a passo, pensado para pessoas como você!
+              <br />
+              <br />Duração: 30 dias. <br />Metas semanais: Pequenas mudanças
+              para implementar aos poucos, melhorando seu estilo de vida sem
+              sofrimentos nem sacrifícios. Exemplo: Reduzir o consumo de doces,
+              incluir mais água ou planejar lanches saudáveis.
+              <br />Acompanhamento: Orientações exclusivas por um grupo no
+              WhatsApp. Dicas práticas, receitas e suporte motivacional.
+              <br />Resultados: Você começa devagar, mas no final estará com
+              novos hábitos que vão durar uma vida inteira!
+            </p>
+          </div>
+        </section>
 
-          <p class="p service-p">
-            Na Pets Juntos e Misturados, oferecemos serviços de alta qualidade para garantir que seu Pet
-            receba o melhor cuidado possível. <span class="span">Confira nossos principais serviços:</span>
+        <!--CTA-->
+        <section
+          id="participar"
+          class="cta has-bg-image"
+          aria-label="cta"
+          style="background-image: url('./assets/cta-bg.jpg')"
+        >
+          <div class="container">
+            <div class="cta-content">
+              <div class="cta-icon">
+                <img
+                  src="./assets/cta-img.jpg"
+                  width="120"
+                  height="35"
+                  loading="lazy"
+                  alt="taste guarantee"
+                  class="img"
+                />
+                <h2 class="h2">Participe agora e comece sua transformação!</h2>
+              </div>
+
+              <p class="section-text">
+                <span>Clique no botão abaixo para se inscrever.</span>
+                <span>Investimento</span>
+                Acesso ao desafio + grupo exclusivo no WhatsApp + materiais
+                extras (planner, vídeos, etc.). Por apenas R$57,00, com
+                condições especiais para pacientes de parceiros!! Além disso, só
+                de fazer parte do desafio você já terá direito a descontos na
+                consultoria, e concorrerá a um sorteio de uma consultoria
+                trimestral totalmente gratuita! <br />Pense no desafio como um
+                investimento em você e na sua saúde. É menos que o valor de uma
+                pizza por semana e traz benefícios que podem durar uma vida
+                inteira!
+              </p>
+
+              <a href="https://wa.me/+5511983078284" target="_blank" class="btn"
+                >Quero Participar do Desafio</a
+              >
+            </div>
+          </div>
+        </section>
+
+        <!--FAQ-->
+        <section id="faq" class="section about" aria-label="about">
+          <div class="container">
+            <h2 class="h2 section-title">
+              <span class="span">Perguntas Frequentes </span>(FAQ)
+            </h2>
+            <p class="p about-p">
+              <span>1. Preciso seguir uma dieta específica?</span> Não! O
+              desafio é sobre mudar hábitos aos poucos, sem dietas radicais.
+              Você vai aprender a adaptar as metas à sua rotina.
+              <span><br />2. Quanto tempo preciso dedicar ao desafio?</span>
+              Poucos minutos por dia. As mudanças são simples e práticas,
+              perfeitas para quem tem pouco tempo.
+              <span><br />3. E se eu não conseguir seguir 100%?</span>
+              Tudo bem! O objetivo é o progresso, não a perfeição. Vamos
+              celebrar cada passo!
+              <span><br />4. Para quem é indicado o desafio?</span> Pessoas
+              adultas que trabalham, cuidam da casa, treinam (ou pretendem
+              começar) e querem melhorar a alimentação sem sofrimento.
+            </p>
+          </div>
+        </section>
+
+        <!--Provas sociais-->
+        <section
+          id="provas-sociais"
+          class="section service"
+          aria-label="service"
+        >
+          <div class="container">
+            <h2 class="h2 section-title">
+              Provas <span class="span">sociais</span>
+            </h2>
+
+            <img
+              id="logo-service"
+              src="./assets/logo.png"
+              width="122"
+              height="136"
+              loading="lazy"
+              alt="logo"
+              class="img"
+            />
+
+            <ul class="grid-list">
+              <li>
+                <div class="service-card">
+                  <figure class="card-icon">
+                    <img
+                      src="./assets/mariana.png"
+                      width="200"
+                      height="200"
+                      loading="lazy"
+                      alt="service icon"
+                    />
+                  </figure>
+
+                  <h3 class="h3 card-title">
+                    Mariana – Reduzindo os doces aos poucos
+                  </h3>
+
+                  <p class="card-text">
+                    Começou comendo doce todos os dias. Na consultoria, ela
+                    aprendeu a reduzir para dia sim, dia não, e depois para
+                    apenas 2 vezes por semana. Hoje, ela sente que tem mais
+                    energia e menos culpa quando sente vontade de comer doces
+                  </p>
+                </div>
+              </li>
+
+              <li>
+                <div class="service-card">
+                  <figure class="card-icon">
+                    <img
+                      src="./assets/ana.png"
+                      width="200"
+                      height="200"
+                      loading="lazy"
+                      alt="service icon"
+                    />
+                  </figure>
+
+                  <h3 class="h3 card-title">
+                    Ana – Descobrindo o prazer de uma rotina organizada
+                  </h3>
+
+                  <p class="card-text">
+                    Achava impossível planejar refeições. Durante o
+                    acompanhamento, ela adotou estratégias rápidas e práticas,
+                    como deixar frutas e lanches à mão, e comida pronta em casa
+                    para não apelar para o ifood. Agora, ela se sente mais no
+                    controle da alimentação e da saúde
+                  </p>
+                </div>
+              </li>
+
+              <li>
+                <div class="service-card">
+                  <figure class="card-icon">
+                    <img
+                      src="./assets/joaopng.png"
+                      width="200"
+                      height="200"
+                      loading="lazy"
+                      alt="service icon"
+                    />
+                  </figure>
+
+                  <h3 class="h3 card-title">
+                    João – Em 8 meses, uma nova pessoa
+                  </h3>
+
+                  <p class="card-text">
+                    não tinha tempo de comer comida durante a semana devido à
+                    correria do trabalho + faculdade, mas fazia academia
+                    5x/semana. Com minhas orientações, ele conseguiu encaixar um
+                    tempo para preparar as marmitas da semana, tomava sol
+                    diariamente e começou a dar mais atenção ao sono, tendo
+                    resultados absurdos em pouco tempo (-20kg)
+                  </p>
+                </div>
+              </li>
+            </ul>
+          </div>
+        </section>
+      </article>
+    </main>
+
+    <!--FOOTER-->
+    <footer class="footer">
+      <div class="footer-top section">
+        <div id="contato" class="container">
+          <p class="footer-text">
+            Se conecte conosco e se houver alguma dúvida, entre em contato:
           </p>
 
-          <ul class="grid-list">
-
-            <li>
-              <div class="service-card">
-
-                <figure class="card-icon">
-                  <img src="./assets/pet_taxi.png" width="200" height="200" loading="lazy" alt="service icon">
-                </figure>
-
-                <h3 class="h3 card-title">Pet Táxi</h3>
-
-                <p class="card-text">Serviço de transporte seguro e confiável para levar e buscar seu Pet (consulte a
-                  região disponível com nossos atendentes via WhatsApp).
-                </p>
-              </div>
+          <ul class="contact-list">
+            <li class="contact-item">
+              <a href="https://wa.me/+5511983078284" target="_blank"
+                ><img class="img-contact" src="./assets/whatsApp-logo.png"
+              /></a>
+              <a
+                href="https://wa.me/+5511983078284"
+                target="_blank"
+                class="contact-link"
+                >(11) 98307-8284</a
+              >
             </li>
 
-            <li>
-              <div class="service-card">
-
-                <figure class="card-icon">
-                  <img src="./assets/banho_tosa.jpg" width="200" height="200" loading="lazy" alt="service icon">
-                </figure>
-
-                <h3 class="h3 card-title">Banho e Tosa</h3>
-
-                <p class="card-text">Oferecemos higiene completa, corte de unhas, cuidados especiais com a pelagem,
-                  hidratação e tosa específica para cada raça. Todos os serviços são realizados por profissionais
-                  experientes em um ambiente constantemente esterilizado, assim como as ferramentas utilizadas. </p>
-              </div>
+            <li class="contact-item">
+              <a
+                href="https://www.instagram.com/ottoperlatto.nutri/"
+                target="_blank"
+                ><img class="img-contact" src="./assets/insta_logo.png"
+              /></a>
+              <a
+                href="https://www.instagram.com/ottoperlatto.nutri/"
+                class="contact-link"
+                target="_blank"
+                >@ottoperlatto.nutri</a
+              >
             </li>
-
-          </ul>
-
-        </div>
-
-      </section>
-
-      <!--CTA-->
-      <section id="cta" class="cta has-bg-image" aria-label="cta" style="background-image: url('./assets/cta-bg.jpg');">
-        <div class="container">
-          <div class="cta-content">
-            <div class="cta-icon">
-              <img src="./assets/cta-icon.png" width="120" height="35" loading="lazy" alt="taste guarantee" class="img">
-              <h2 class="h2">Sabor garantido</h2>
-            </div>
-
-            <h2 class="h2 section-title">Experimente, ame ou substitua!</h2>
-
-            <p class="section-text">Na Pets Juntos e Misturados, acreditamos que seu cão e/ou gato vão adorar tanto a
-              nossa comida que, se não gostarem, ajudaremos você a encontrar uma substituta.
-            </p>
-
-            <a href="https://wa.me/+5511962611239" class="btn">Saiba mais</a>
-          </div>
-
-          <figure class="cta-banner">
-            <img src="./assets/cta-banner.png" loading="lazy" alt="cat" class="w-100">
-          </figure>
-
-        </div>
-      </section>
-
-      <!--CLIENTS-->
-      <section id="clients" class="section clients" aria-label="clients">
-
-        <div class="container-gallery">
-          <h2 class="h2 section-title">
-            <span class="span">Alguns de nossos</span> clientes
-          </h2>
-
-          <div class="image-container">
-            <img id="selected-image-2" src="./assets/brand-1.jpg" alt="Imagem Selecionada">
-          </div>
-
-          <ul class="image-list">
-            <li><img src="./assets/brand-1.jpg" alt="cachorro" loading="lazy"
-                onclick="selectImage('./assets/brand-1.jpg', 'selected-image-2')"></li>
-
-            <li><img src="./assets/brand-2.jpg" alt="cachorro" loading="lazy"
-                onclick="selectImage('./assets/brand-2.jpg', 'selected-image-2')"></li>
-
-            <li><img src="./assets/brand-3.jpg" alt="cachorro" loading="lazy"
-                onclick="selectImage('./assets/brand-3.jpg', 'selected-image-2')"></li>
-
-            <li><img src="./assets/brand-4.jpg" alt="cachorro" loading="lazy"
-                onclick="selectImage('./assets/brand-4.jpg', 'selected-image-2')"></li>
-
-            <li><img src="./assets/brand-5.jpg" alt="cachorro" loading="lazy"
-                onclick="selectImage('./assets/brand-5.jpg', 'selected-image-2')"></li>
-
-            <li><img src="./assets/brand-6.jpg" alt="cachorro" loading="lazy"
-                onclick="selectImage('./assets/brand-6.jpg', 'selected-image-2')"></li>
-
-            <li><img src="./assets/brand-7.jpg" alt="cachorro" loading="lazy"
-                onclick="selectImage('./assets/brand-7.jpg', 'selected-image-2')"></li>
-
-            <li><img src="./assets/brand-8.jpg" alt="cachorro" loading="lazy"
-                onclick="selectImage('./assets/brand-8.jpg', 'selected-image-2')"></li>
-
-            <li><img src="./assets/brand-9.jpg" alt="cachorro" loading="lazy"
-                onclick="selectImage('./assets/brand-9.jpg', 'selected-image-2')"></li>
-
-            <li><img src="./assets/brand-10.png" alt="cachorro" loading="lazy"
-                onclick="selectImage('./assets/brand-10.png', 'selected-image-2')"></li>
           </ul>
         </div>
-      </section>
+      </div>
 
-      <!--ABOUT-->
-      <section id="about" class="section about" aria-label="about">
+      <div class="footer-bottom">
         <div class="container">
-          <h2 class="h2 section-title"><span class="span">Sobre</span> nós:</h2>
-          <p class="p about-p">Olá! Somos Flavio & Gilmara, os CEOs da Pets Juntos e Misturados. Casados há mais de
-            30 anos, com três filhos maravilhosos.
-            <br>A Pets Juntos e Misturados nasceu em maio de 2024, de um sonho que nutrimos há muito tempo.
-            Apaixonados
-            por animais, sempre desejamos criar um espaço onde pudéssemos receber, cuidar e demonstrar todo o nosso
-            amor e carinho pelos pets de nossos clientes.
-            <br>Flavio possui vasta experiência na área de banho e tosa, atuando na região das Perdizes. Formado com
-            especialização em tesoura, ele garante um cuidado excepcional e profissional para os seus pets.
-            <br>O nome "Juntos e Misturados" tem um significado muito
-            especial para nós. Ele surgiu de um grupo no WhatsApp que inclui nós, nossos filhos e seus cônjuges, a
-            quem consideramos como nossos filhos. Essa união e harmonia refletem os valores que queremos transmitir
-            em nossa empresa.
-            <br>Estamos aqui para compartilhar nossa paixão pelos animais com você e seu pet.
-            Venha nos conhecer e faça parte da nossa família Juntos e Misturados!
+          <img
+            src="./assets/payment.png"
+            width="397"
+            height="32"
+            loading="lazy"
+            alt="payment method"
+            class="img"
+          />
         </div>
-      </section>
 
-    </article>
-  </main>
-
-  <!--FOOTER-->
-  <footer class="footer">
-
-    <div class="footer-top section">
-      <div id="contact" class="container">
-
-        <p class="footer-text">
-          Se conecte conosco e se houver alguma dúvida, entre em contato:
+        <p class="copyright">
+          <a
+            href="https://portifoliodavialexandre.netlify.app/"
+            class="copyright-link"
+            >&copy; 2025 Otto Perlatto Nutri. Todos os direitos reservados.</a
+          >
         </p>
-
-        <ul class="contact-list">
-          <li class="contact-item">
-            <a href="https://wa.me/+5511962611239" target="_blank"><img
-                class="img-contact" src="./assets/whatsApp-logo.png"></a>
-            <a href="https://wa.me/+5511962611239" class="contact-link">(11) 96261-1239</a>
-          </li>
-
-          <li class="contact-item">
-            <a href="https://www.instagram.com/petsjuntos_misturados/" target="_blank"><img class="img-contact"
-                src="./assets/insta_logo.png"></a>
-            <a href="https://www.instagram.com/petsjuntos_misturados/" class="contact-link">@petsjuntos_misturados</a>
-          </li>
-
-          <li class="contact-item">
-            <a href="mailto:juntosmisturadospet@gmail.com" target="_blank"><img class="img-contact"
-                src="./assets/gmail-logo.png"></a>
-            <a href="mailto:juntosmisturadospet@gmail.com" class="contact-link">juntosmisturadospet@gmail.com</a>
-          </li>
-
-          <li class="contact-item">
-            <a href="https://www.google.com/maps/place/Rua+Sanclerl%C3%A2ndia,+3a+-+Jardim+Pirituba,+S%C3%A3o+Paulo+-+SP,+02985-040/@-23.4424038,-46.7238789,17z/data=!3m1!4b1!4m27!1m20!1m16!4m15!1m6!1m2!1s0x94cef9dbbdcee063:0xe050b0f1686c8b27!2sR.+Lucindo+Passos+Filho,+180+-+Brasil%C3%A2ndia,+S%C3%A3o+Paulo+-+SP,+02865-040,+Brasil!2m2!1d-46.6769235!2d-23.4735969!1m6!1m2!1s0x15771b00cefa903:0xa2fb9889af445d06!2sTorre+III,+Av.+Guido+Caloi,+1002+-+Jardim+S%C3%A3o+Lu%C3%ADs,+S%C3%A3o+Paulo+-+SP,+05802-140!2m2!1d-46.7254916!2d-23.6540817!3e0!2m2!3m1!5e2!3m5!1s0x94cefbb8ff7070d7:0xb2e49add852ea74a!8m2!3d-23.4424087!4d-46.721304!16s%2Fg%2F11hb70b8nd?entry=ttu"
-              class="img-contact"><ion-icon name="location-outline" class="address-icon" aria-hidden="true"
-                sty></ion-icon></a>
-            <a href="http s://www.google.com/maps/place/Rua+Sanclerl%C3%A2ndia,+3a+-+Jardim+Pirituba,+S%C3%A3o+Paulo+-+SP,+02985-040/@-23.4424038,-46.7238789,17z/data=!3m1!4b1!4m27!1m20!1m16!4m15!1m6!1m2!1s0x94cef9dbbdcee063:0xe050b0f1686c8b27!2sR.+Lucindo+Passos+Filho,+180+-+Brasil%C3%A2ndia,+S%C3%A3o+Paulo+-+SP,+02865-040,+Brasil!2m2!1d-46.6769235!2d-23.4735969!1m6!1m2!1s0x15771b00cefa903:0xa2fb9889af445d06!2sTorre+III,+Av.+Guido+Caloi,+1002+-+Jardim+S%C3%A3o+Lu%C3%ADs,+S%C3%A3o+Paulo+-+SP,+05802-140!2m2!1d-46.7254916!2d-23.6540817!3e0!2m2!3m1!5e2!3m5!1s0x94cefbb8ff7070d7:0xb2e49add852ea74a!8m2!3d-23.4424087!4d-46.721304!16s%2Fg%2F11hb70b8nd?entry=ttu"
-              class="contact-link" target="_blank">Rua Sanclerlândia, 3A - Jardim Pirituba</a>
-          </li>
-        </ul>
       </div>
-    </div>
-    </div>
+    </footer>
 
-    <div class="footer-bottom">
-      <div class="container">
-        <img src="./assets/payment.png" width="397" height="32" loading="lazy" alt="payment method" class="img">
-      </div>
+    <!--BACK TO TOP-->
+    <a
+      href="#top"
+      class="back-top-btn"
+      aria-label="back to top"
+      data-back-top-btn
+    >
+      <ion-icon name="chevron-up" aria-hidden="true"></ion-icon>
+    </a>
 
-      <p class="copyright">
-        <a href="https://portifoliodavialexandre.netlify.app/" class="copyright-link">&copy; 2024 Davi Alexandre.
-          Todos os direitos reservados.</a>
-      </p>
-    </div>
-
-  </footer>
-
-  <!--BACK TO TOP-->
-  <a href="#top" class="back-top-btn" aria-label="back to top" data-back-top-btn>
-    <ion-icon name="chevron-up" aria-hidden="true"></ion-icon>
-  </a>
-
-  <a href="https://wa.me/+5511962611239" class="logo-whats"
-    target="_blank"><img class="logo-whats" src="./assets/whatsApp-logo.png" alt="Logo WhatsApp"></a>
-</body>
-
+    <a href="https://wa.me/+5511983078284" class="logo-whats" target="_blank"
+      ><img
+        class="logo-whats"
+        src="./assets/whatsApp-logo.png"
+        alt="Logo WhatsApp"
+    /></a>
+  </body>
 </html>
