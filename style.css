@@ -145,7 +145,7 @@ body {
 }
 
 .h2 {
-  font-size: var(--fs-2);
+  font-size: var(--fs-3);
 }
 
 .h3 {
@@ -269,6 +269,9 @@ body {
 }
 
 /*HERO*/
+#home {
+  margin-top: 10px;
+}
 .hero {
   min-height: 360px;
   background-position: left;
@@ -278,12 +281,33 @@ body {
 .hero-title {
   margin-block-start: 50px;
   font-size: 50px;
+  text-shadow: 2px 2px 0px black;
   color: var(--white);
 }
 
 .hero-title .span {
   font-size: 0.5em;
   color: var(--portland-orange);
+}
+
+.btn-hero {
+  display: flex;
+  margin: 0 auto;
+  margin-top: 25px;
+  width: 200px;
+  text-align: center;
+  background-color: var(--portland-orange);
+  color: var(--white);
+  max-width: max-content;
+  padding: 8px 25px;
+  font-weight: var(--fw-700);
+  border-radius: 50px;
+  transition: var(--transition-1);
+}
+
+.btn-hero:is(:hover, :focus) {
+  background-color: var(--white);
+  color: var(--black);
 }
 
 /*SERVICE*/
@@ -360,10 +384,10 @@ body {
 }
 
 .cta-icon .h2 {
-  font-size: var(--fs-2);
+  font-size: 3.2rem;
 }
 
-.cta .section-title {
+.cta .h2 {
   text-align: center;
   margin-block: 10px 20px;
 }
